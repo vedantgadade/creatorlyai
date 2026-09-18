@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CreatorlyAI — Free AI Tools for Creators</title>
+  <meta name="description" content="Free AI tools for YouTubers, Instagram creators and small businesses. Generate titles, hooks, scripts, captions, hashtags and content ideas.">
+  <meta name="keywords" content="AI creator tools, YouTube title generator, shorts script generator, Instagram caption generator, AI hook generator">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="#">Creatorly<span>AI</span></a>
+  <nav>
+    <a href="#tools">Tools</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a>
+  </nav>
+  <a class="btn small" href="#tools">Try Free</a>
+</header>
+
+<main>
+<section class="hero">
+  <div class="badge">✨ Free AI tools for creators</div>
+  <h1>Create content<br><span>in seconds.</span></h1>
+  <p>Simple AI tools for YouTube, Instagram and social media. Get ideas, hooks, scripts and captions without the hard work.</p>
+  <div class="hero-actions"><a class="btn" href="#tools">Start Creating →</a><a class="ghost" href="#pricing">See Pro plan</a></div>
+  <div class="trust"><span>✓ No coding needed</span><span>✓ Fast & simple</span><span>✓ Free to try</span></div>
+</section>
+
+<section id="tools" class="section">
+  <div class="section-head"><div><p class="eyebrow">CREATOR TOOLKIT</p><h2>Choose a tool</h2></div><p>Start free. Pick a tool and generate useful content ideas.</p></div>
+  <div class="grid">
+    <article class="tool-card" data-tool="title"><div class="icon">🎬</div><h3>YouTube Title Generator</h3><p>Create catchy video title ideas from your topic.</p><button>Open tool →</button></article>
+    <article class="tool-card" data-tool="hook"><div class="icon">🪝</div><h3>Viral Hook Generator</h3><p>Get strong opening lines for Shorts and Reels.</p><button>Open tool →</button></article>
+    <article class="tool-card" data-tool="script"><div class="icon">📝</div><h3>Shorts Script Generator</h3><p>Turn a topic into a short video script.</p><button>Open tool →</button></article>
+    <article class="tool-card" data-tool="caption"><div class="icon">📱</div><h3>Instagram Caption</h3><p>Write clean captions for your next post.</p><button>Open tool →</button></article>
+    <article class="tool-card" data-tool="hashtags"><div class="icon">#️⃣</div><h3>Hashtag Generator</h3><p>Find useful hashtag ideas for your topic.</p><button>Open tool →</button></article>
+    <article class="tool-card" data-tool="thumbnail"><div class="icon">🖼️</div><h3>Thumbnail Prompt</h3><p>Create an AI image prompt for your thumbnail.</p><button>Open tool →</button></article>
+    <article class="tool-card" data-tool="ad"><div class="icon">📢</div><h3>Ad Copy Generator</h3><p>Create short ad copy for products and services.</p><button>Open tool →</button></article>
+    <article class="tool-card" data-tool="ideas"><div class="icon">💡</div><h3>Content Idea Generator</h3><p>Generate fresh content ideas for your niche.</p><button>Open tool →</button></article>
+  </div>
+</section>
+
+<section class="demo">
+  <div><p class="eyebrow">TRY IT NOW</p><h2>One idea. Many outputs.</h2><p>Enter a topic and test the free demo. This first version works without an API so you can publish it cheaply.</p></div>
+  <div class="generator">
+    <label for="topic">Your topic</label>
+    <input id="topic" placeholder="e.g. GTA 6 tips for beginners">
+    <label for="toolSelect">Tool</label>
+    <select id="toolSelect">
+      <option value="title">YouTube Title</option><option value="hook">Viral Hook</option><option value="script">Shorts Script</option>
+      <option value="caption">Instagram Caption</option><option value="hashtags">Hashtags</option><option value="thumbnail">Thumbnail Prompt</option>
+      <option value="ad">Ad Copy</option><option value="ideas">Content Ideas</option>
+    </select>
+    <button id="generate" class="btn full">Generate →</button>
+    <div id="result" class="result">Your result will appear here.</div>
+    <button id="copy" class="copy" hidden>Copy result</button>
+  </div>
+</section>
+
+<section id="pricing" class="section pricing">
+  <div class="center"><p class="eyebrow">PRICING</p><h2>Start free. Upgrade when you grow.</h2></div>
+  <div class="price-grid">
+    <div class="price-card"><h3>Free</h3><div class="price">₹0</div><p>For trying the tools.</p><ul><li>5 generations/day</li><li>All 8 starter tools</li><li>Copy results</li></ul><a class="btn outline" href="#tools">Start Free</a></div>
+    <div class="price-card featured"><div class="popular">POPULAR</div><h3>Pro</h3><div class="price">₹199 <small>/ month</small></div><p>For active creators.</p><ul><li>Unlimited generations*</li><li>More advanced tools</li><li>No ads</li></ul><a class="btn" href="mailto:YOUR_EMAIL@example.com?subject=CreatorlyAI%20Pro">Get Pro</a></div>
+  </div>
+  <p class="note">*Connect a real AI API and payment provider before selling unlimited usage. The demo currently uses local templates.</p>
+</section>
+
+<section id="faq" class="faq section">
+  <div class="center"><p class="eyebrow">FAQ</p><h2>Questions</h2></div>
+  <details><summary>Is CreatorlyAI free?</summary><p>Yes. This starter version has a free demo. You can later add limits, accounts, payments and ads.</p></details>
+  <details><summary>Does it use real AI?</summary><p>The starter demo uses simple local templates. For real AI answers, connect an AI API on a secure server. Never put a private API key inside browser JavaScript.</p></details>
+  <details><summary>Can I earn from it?</summary><p>You can add display ads, affiliate links and a paid plan after you have useful content and traffic.</p></details>
+</section>
+</main>
+
+<footer><div class="logo">Creatorly<span>AI</span></div><p>AI tools made simple for creators.</p><div><a href="#">Privacy</a><a href="#">Terms</a><a href="mailto:YOUR_EMAIL@example.com">Contact</a></div><small>© 2026 CreatorlyAI</small></footer>
+<script src="script.js"></script>
+</body>
+</html>
