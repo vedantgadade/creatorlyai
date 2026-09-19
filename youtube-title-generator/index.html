@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>YouTube Title Generator | CreatorlyAI</title>
+  <meta name="description" content="Create catchy YouTube title ideas with CreatorlyAI's free YouTube Title Generator. Enter your topic and get multiple title ideas instantly.">
+
+  <link rel="canonical" href="https://creatorlyai-search-console-ready.vercel.app/youtube-title-generator/">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: auto;
+      padding: 30px 20px;
+      line-height: 1.6;
+      color: #222;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .box {
+      background: #f5f5f5;
+      padding: 25px;
+      border-radius: 12px;
+      margin: 25px 0;
+    }
+
+    input {
+      width: 100%;
+      padding: 14px;
+      font-size: 16px;
+      box-sizing: border-box;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    button {
+      padding: 13px 20px;
+      border: 0;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    #result {
+      white-space: pre-line;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <a href="/">← Back to CreatorlyAI</a>
+
+  <h1>YouTube Title Generator</h1>
+
+  <p>
+    Create catchy YouTube title ideas for your videos. Enter your video topic
+    and get several title suggestions you can use or customize.
+  </p>
+
+  <div class="box">
+    <h2>Generate YouTube Titles</h2>
+
+    <input
+      id="topic"
+      type="text"
+      placeholder="Example: How to grow on YouTube"
+    >
+
+    <button onclick="generateTitles()">Generate Titles</button>
+
+    <div id="result"></div>
+  </div>
+
+  <h2>How to use the YouTube Title Generator</h2>
+
+  <p>
+    Enter your video topic above and click Generate Titles. The tool creates
+    several title formats that you can edit and use for your YouTube video.
+  </p>
+
+  <h2>Tips for better YouTube titles</h2>
+
+  <ul>
+    <li>Keep the main topic clear.</li>
+    <li>Make the title easy to understand.</li>
+    <li>Create curiosity without misleading viewers.</li>
+    <li>Use important keywords naturally.</li>
+    <li>Make different title versions and choose the one that fits your video.</li>
+  </ul>
+
+  <h2>Frequently Asked Questions</h2>
+
+  <h3>Is this YouTube Title Generator free?</h3>
+  <p>Yes. The tool is available for free on CreatorlyAI.</p>
+
+  <h3>Do I need to install anything?</h3>
+  <p>No. The tool works directly in your web browser.</p>
+
+  <h3>Can I edit the generated titles?</h3>
+  <p>Yes. You can customize any generated title before using it.</p>
+
+  <script>
+    function generateTitles() {
+      const topic = document.getElementById("topic").value.trim();
+      const result = document.getElementById("result");
+
+      if (!topic) {
+        result.textContent = "Please enter a topic first.";
+        return;
+      }
+
+      result.textContent =
+        "1. " + topic + ": The Complete Guide\n\n" +
+        "2. 7 Things You Need to Know About " + topic + "\n\n" +
+        "3. I Tried " + topic + " — Here's What Happened\n\n" +
+        "4. " + topic + " Tips That Actually Work\n\n" +
+        "5. Beginner's Guide to " + topic;
+    }
+  </script>
+
+</body>
+</html>
