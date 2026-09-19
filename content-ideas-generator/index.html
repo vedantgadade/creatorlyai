@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Content Ideas Generator | CreatorlyAI</title>
+  <meta name="description" content="Generate content ideas for YouTube, Instagram and social media with CreatorlyAI's free Content Ideas Generator. Enter a topic and get ideas to develop.">
+
+  <link rel="canonical" href="https://creatorlyai-search-console-ready.vercel.app/content-ideas-generator/">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: auto;
+      padding: 30px 20px;
+      line-height: 1.6;
+      color: #222;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .box {
+      background: #f5f5f5;
+      padding: 25px;
+      border-radius: 12px;
+      margin: 25px 0;
+    }
+
+    input {
+      width: 100%;
+      padding: 14px;
+      font-size: 16px;
+      box-sizing: border-box;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    button {
+      padding: 13px 20px;
+      border: 0;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    #result {
+      white-space: pre-line;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <a href="/">← Back to CreatorlyAI</a>
+
+  <h1>Content Ideas Generator</h1>
+
+  <p>
+    Generate simple content ideas for YouTube, Instagram, Shorts, Reels and
+    other social media platforms. Enter your topic and get several ideas that
+    you can develop into your own content.
+  </p>
+
+  <div class="box">
+    <h2>Generate Content Ideas</h2>
+
+    <input
+      id="topic"
+      type="text"
+      placeholder="Example: YouTube growth"
+    >
+
+    <button onclick="generateIdeas()">Generate Ideas</button>
+
+    <div id="result"></div>
+  </div>
+
+  <h2>How to use the Content Ideas Generator</h2>
+
+  <p>
+    Enter a topic and click Generate Ideas. The tool creates different
+    content angles that you can customize for your audience and platform.
+  </p>
+
+  <h2>Content idea tips</h2>
+
+  <ul>
+    <li>Choose topics your audience actually cares about.</li>
+    <li>Turn common questions into useful content.</li>
+    <li>Try tutorials, tips, mistakes and comparisons.</li>
+    <li>Use your own experience and examples.</li>
+    <li>Adapt each idea to the platform you are publishing on.</li>
+  </ul>
+
+  <h2>Frequently Asked Questions</h2>
+
+  <h3>Is this Content Ideas Generator free?</h3>
+  <p>Yes. CreatorlyAI provides this tool for free.</p>
+
+  <h3>What platforms can I create ideas for?</h3>
+  <p>You can adapt the ideas for YouTube, Shorts, Instagram, Reels and other social platforms.</p>
+
+  <h3>Are the generated ideas ready to publish?</h3>
+  <p>They are starting points. Customize them with your own information, examples and style.</p>
+
+  <script>
+    function generateIdeas() {
+      const topic = document.getElementById("topic").value.trim();
+      const result = document.getElementById("result");
+
+      if (!topic) {
+        result.textContent = "Please enter a topic first.";
+        return;
+      }
+
+      result.textContent =
+        "1. Beginner mistakes in " + topic + "\n\n" +
+        "2. 5 quick tips for " + topic + "\n\n" +
+        "3. Myths about " + topic + "\n\n" +
+        "4. " + topic + ": What nobody tells beginners\n\n" +
+        "5. A step-by-step " + topic + " tutorial\n\n" +
+        "6. Reacting to common " + topic + " mistakes\n\n" +
+        "7. " + topic + " tools you should try";
+    }
+  </script>
+
+</body>
+</html>
