@@ -1,6 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
     <loc>https://creatorlyai-search-console-ready.vercel.app/</loc>
   </url>
+
+  <url>
+    <loc>https://creatorlyai-search-console-ready.vercel.app/youtube-title-generator/</loc>
+  </url>
+
+  <url>
+    <loc>https://creatorlyai-search-console-ready.vercel.app/viral-hook-generator/</loc>
+  </url>
+
+  <url>
+    <loc>https://creatorlyai-search-console-ready.vercel.app/shorts-script-generator/</loc>
+  </url>
+
+  <url>
+    <loc>https://creatorlyai-search-console-ready.vercel.app/instagram-caption-generator/</loc>
+  </url>
+
+  <url>
+    <loc>https://creatorlyai-search-console-ready.vercel.app/hashtag-generator/</loc>
+  </url>
+
+  <url>
+    <loc>https://creatorlyai-search-console-ready.vercel.app/thumbnail-prompt-generator/</loc>
+  </url>
+
+  <url>
+    <loc>https://creatorlyai-search-console-ready.vercel.app/ad-copy-generator/</loc>
+  </url>
+
+  <url>
+    <loc>https://creatorlyai-search-console-ready.vercel.app/content-ideas-generator/</loc>
+  </url>
+
 </urlset>
