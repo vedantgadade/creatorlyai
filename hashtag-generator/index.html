@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Hashtag Generator | CreatorlyAI</title>
+  <meta name="description" content="Generate relevant hashtag ideas for Instagram, YouTube and social media with CreatorlyAI's free Hashtag Generator.">
+
+  <link rel="canonical" href="https://creatorlyai-search-console-ready.vercel.app/hashtag-generator/">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: auto;
+      padding: 30px 20px;
+      line-height: 1.6;
+      color: #222;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .box {
+      background: #f5f5f5;
+      padding: 25px;
+      border-radius: 12px;
+      margin: 25px 0;
+    }
+
+    input {
+      width: 100%;
+      padding: 14px;
+      font-size: 16px;
+      box-sizing: border-box;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    button {
+      padding: 13px 20px;
+      border: 0;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    #result {
+      white-space: pre-line;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <a href="/">← Back to CreatorlyAI</a>
+
+  <h1>Hashtag Generator</h1>
+
+  <p>
+    Generate hashtag ideas for Instagram, YouTube and social media content.
+    Enter your topic and get a simple list of relevant hashtags to customize
+    for your post.
+  </p>
+
+  <div class="box">
+    <h2>Generate Hashtags</h2>
+
+    <input
+      id="topic"
+      type="text"
+      placeholder="Example: Fitness tips"
+    >
+
+    <button onclick="generateHashtags()">Generate Hashtags</button>
+
+    <div id="result"></div>
+  </div>
+
+  <h2>How to use the Hashtag Generator</h2>
+
+  <p>
+    Enter your content topic and click Generate Hashtags. You can then
+    customize the suggested hashtags to match your specific post.
+  </p>
+
+  <h2>Tips for using hashtags</h2>
+
+  <ul>
+    <li>Use hashtags related to your actual content.</li>
+    <li>Mix broad and specific topics.</li>
+    <li>Avoid unrelated hashtags.</li>
+    <li>Keep your hashtags relevant to your audience.</li>
+    <li>Review current platform recommendations before publishing.</li>
+  </ul>
+
+  <h2>Frequently Asked Questions</h2>
+
+  <h3>Is this Hashtag Generator free?</h3>
+  <p>Yes. CreatorlyAI provides this tool for free.</p>
+
+  <h3>Where can I use these hashtags?</h3>
+  <p>You can customize the suggestions for Instagram, YouTube and other social platforms.</p>
+
+  <h3>Should I use every generated hashtag?</h3>
+  <p>No. Choose hashtags that are genuinely relevant to your content.</p>
+
+  <script>
+    function generateHashtags() {
+      const topic = document.getElementById("topic").value.trim();
+      const result = document.getElementById("result");
+
+      if (!topic) {
+        result.textContent = "Please enter a topic first.";
+        return;
+      }
+
+      const clean = topic
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "")
+        .slice(0, 20);
+
+      result.textContent =
+        "#" + clean + "\n" +
+        "#ContentCreator\n" +
+        "#YouTube\n" +
+        "#Instagram\n" +
+        "#CreatorTips\n" +
+        "#SocialMedia\n" +
+        "#ContentCreation\n" +
+        "#CreatorEconomy\n" +
+        "#DigitalCreator";
+    }
+  </script>
+
+</body>
+</html>
