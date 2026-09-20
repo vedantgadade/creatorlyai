@@ -5,9 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Instagram Caption Generator | CreatorlyAI</title>
-  <meta name="description" content="Create Instagram caption ideas with CreatorlyAI's free Instagram Caption Generator. Enter your topic and get caption ideas for your social media posts.">
+  <meta name="description" content="Create Instagram caption ideas with CreatorlyAI's free Instagram Caption Generator. Enter your topic and get a caption you can edit and use for your post.">
 
   <link rel="canonical" href="https://creatorlyai-search-console-ready.vercel.app/instagram-caption-generator/">
+
+  <!-- Breadcrumb structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "CreatorlyAI",
+        "item": "https://creatorlyai-search-console-ready.vercel.app/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Instagram Caption Generator",
+        "item": "https://creatorlyai-search-console-ready.vercel.app/instagram-caption-generator/"
+      }
+    ]
+  }
+  </script>
 
   <style>
     body {
@@ -70,8 +92,8 @@
   <h1>Instagram Caption Generator</h1>
 
   <p>
-    Create caption ideas for Instagram posts, Reels and social media content.
-    Enter your topic and generate several caption ideas that you can customize.
+    Create simple Instagram caption ideas for your posts. Enter your topic
+    and get a caption you can customize for your audience and content style.
   </p>
 
   <div class="box">
@@ -80,7 +102,7 @@
     <input
       id="topic"
       type="text"
-      placeholder="Example: Travel photography"
+      placeholder="Example: My first trip to Goa"
     >
 
     <button onclick="generateCaption()">Generate Caption</button>
@@ -91,30 +113,37 @@
   <h2>How to use the Instagram Caption Generator</h2>
 
   <p>
-    Enter your post topic and click Generate Caption. The tool creates a
-    simple caption that you can edit before publishing.
+    Enter the topic of your Instagram post and click Generate Caption.
+    The tool creates a simple caption that you can edit before publishing.
   </p>
 
   <h2>Tips for better Instagram captions</h2>
 
   <ul>
-    <li>Keep the main message clear.</li>
-    <li>Write for the people you want to reach.</li>
-    <li>Use a natural and conversational style.</li>
+    <li>Keep the caption relevant to your post.</li>
+    <li>Use simple and natural language.</li>
     <li>Add a question when you want people to respond.</li>
-    <li>Use relevant hashtags instead of unrelated ones.</li>
+    <li>Use emojis only when they fit your content.</li>
+    <li>Add relevant hashtags when they are useful.</li>
   </ul>
 
   <h2>Frequently Asked Questions</h2>
 
   <h3>Is this Instagram Caption Generator free?</h3>
-  <p>Yes. CreatorlyAI provides this tool for free.</p>
+  <p>
+    Yes. The tool is available for free on CreatorlyAI.
+  </p>
 
-  <h3>Can I use the captions for Instagram Reels?</h3>
-  <p>Yes. You can customize the generated captions for posts, Reels and other social content.</p>
+  <h3>Can I use the captions on Instagram?</h3>
+  <p>
+    Yes. You can edit and use the generated caption for your Instagram post.
+  </p>
 
-  <h3>Can I edit the generated caption?</h3>
-  <p>Yes. You can change the caption to match your content and personal style.</p>
+  <h3>Can I customize the generated caption?</h3>
+  <p>
+    Yes. You can change the wording, emojis, hashtags and call to action
+    to match your post.
+  </p>
 
   <script>
     function generateCaption() {
@@ -130,7 +159,7 @@
         "🚀 Let's talk about " + topic + ".\n\n" +
         "Here are a few simple things every creator should know. " +
         "Save this post and share it with someone who needs it!\n\n" +
-        "What do you think about " + topic + "? 👇";
+        "What do you think? 👇";
     }
   </script>
 
