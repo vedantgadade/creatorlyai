@@ -1,19 +1,173 @@
-<!doctype html><html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Instagram Caption Generator | CreatorlyAI</title><meta name="description" content="Create Instagram caption ideas with CreatorlyAI's free Instagram Caption Generator. Enter your topic and get a caption you can edit for your post.">
-<link rel="canonical" href="https://creatorlyai-search-console-ready.vercel.app/instagram-caption-generator/">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"CreatorlyAI","item":"https://creatorlyai-search-console-ready.vercel.app/"},{"@type":"ListItem","position":2,"name":"Instagram Caption Generator","item":"https://creatorlyai-search-console-ready.vercel.app/instagram-caption-generator/"}]}</script>
-<style>*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#f6f7fb;color:#111827;line-height:1.6}nav{padding:18px 6%;background:#fff;border-bottom:1px solid #e5e7eb}nav a{text-decoration:none;color:#111827;font-weight:700}main{max-width:900px;margin:auto;padding:50px 20px}.card{background:#fff;border:1px solid #e5e7eb;border-radius:18px;padding:28px;margin-bottom:22px}h1{font-size:42px;line-height:1.15}input{width:100%;padding:15px;border:1px solid #d1d5db;border-radius:10px;font-size:16px;margin:12px 0}button{border:0;border-radius:10px;padding:14px 20px;font-size:16px;font-weight:700;cursor:pointer;background:#111827;color:#fff}.result-item{padding:14px 0;border-bottom:1px solid #eee}details{padding:14px 0;border-bottom:1px solid #eee}summary{cursor:pointer;font-weight:700}footer{text-align:center;padding:30px;color:#6b7280}.small{color:#6b7280}</style>
-</head><body><nav><a href="https://creatorlyai-search-console-ready.vercel.app/">← CreatorlyAI</a></nav><main>
-<section class="card"><p class="small">CreatorlyAI Free Tool</p><h1>Instagram Caption Generator</h1><p>Create simple Instagram caption ideas for posts, photos, Reels and creator content. Enter your topic and customize the result.</p>
-<input id="topic" placeholder="Enter your topic..." aria-label="Enter your topic"><button id="generate">Generate</button><div id="result" style="margin-top:25px"></div></section>
-<section class="card"><h2>How to use this tool</h2><p>Enter your topic, click Generate, and edit the result to match your content. Always check facts and claims before publishing.</p><h2>Tips</h2><ul><li>Keep the caption natural and relevant.</li><li>Add details that give the audience context.</li><li>Use a call to action only when it makes sense.</li></ul></section>
-<section class="card"><h2>Frequently asked questions</h2><details><summary>What is an Instagram caption generator?</summary><p>It creates starting caption ideas from a topic so you can edit them for your Instagram post or Reel.</p></details><details><summary>Can I customize the caption?</summary><p>Yes. The generated caption is only a starting point.</p></details><details><summary>Is the tool free?</summary><p>Yes. It is available as a free browser-based CreatorlyAI tool.</p></details></section></main>
-<footer>© 2026 CreatorlyAI · Free creator tools</footer>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PG16GCTCJ8"></script>
 <script>
-const TEMPLATES=['✨ {x} — creating, learning and sharing one step at a time. What do you think?', 'Building something around {x} and enjoying the process. Save this post if you want to come back to it later.', 'A little update on {x} 🚀 More experiments, more learning, more progress.'];
-function escapeHtml(s){return String(s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));}
-function show(data){document.getElementById('result').innerHTML='<h2>Generated ideas</h2>'+data.map(x=>'<div class="result-item">'+escapeHtml(x)+'</div>').join('');}
-document.getElementById('generate').addEventListener('click',()=>{const x=document.getElementById('topic').value.trim();if(!x){document.getElementById('result').innerHTML='<p>Enter a topic first.</p>';return;}show(TEMPLATES.map(s=>s.replaceAll('{x}',x).replaceAll('{base}',x.toLowerCase().replace(/[^a-z0-9]/g,''))));});
-document.getElementById('topic').addEventListener('keydown',e=>{if(e.key==='Enter')document.getElementById('generate').click();});
-</script></body></html>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PG16GCTCJ8');
+</script>
+
+<title>Instagram Caption Generator | CreatorlyAI</title>
+<meta name="description" content="Create Instagram caption ideas with CreatorlyAI's free Instagram Caption Generator. Enter your topic and get a caption you can edit for your post.">
+
+<link rel="canonical" href="https://creatorlyai-search-console-ready.vercel.app/instagram-caption-generator/">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {
+      "@type":"ListItem",
+      "position":1,
+      "name":"CreatorlyAI",
+      "item":"https://creatorlyai-search-console-ready.vercel.app/"
+    },
+    {
+      "@type":"ListItem",
+      "position":2,
+      "name":"Instagram Caption Generator",
+      "item":"https://creatorlyai-search-console-ready.vercel.app/instagram-caption-generator/"
+    }
+  ]
+}
+</script>
+
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f6f7fb;color:#111827;line-height:1.6}
+nav{padding:18px 6%;background:#fff;border-bottom:1px solid #e5e7eb}
+nav a{text-decoration:none;color:#111827;font-weight:700}
+main{max-width:900px;margin:auto;padding:50px 20px}
+.card{background:#fff;border:1px solid #e5e7eb;border-radius:18px;padding:28px;margin-bottom:22px}
+h1{font-size:42px;line-height:1.15}
+input{width:100%;padding:15px;border:1px solid #d1d5db;border-radius:10px;font-size:16px;margin:12px 0}
+button{border:0;border-radius:10px;padding:14px 20px;font-size:16px;font-weight:700;cursor:pointer;background:#111827;color:#fff}
+.result-item{padding:14px 0;border-bottom:1px solid #eee}
+details{padding:14px 0;border-bottom:1px solid #eee}
+summary{cursor:pointer;font-weight:700}
+footer{text-align:center;padding:30px;color:#6b7280}
+.small{color:#6b7280}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="https://creatorlyai-search-console-ready.vercel.app/">← CreatorlyAI</a>
+</nav>
+
+<main>
+
+<section class="card">
+<p class="small">CreatorlyAI Free Tool</p>
+
+<h1>Instagram Caption Generator</h1>
+
+<p>Create simple Instagram caption ideas for posts, photos, Reels and creator content. Enter your topic and customize the result.</p>
+
+<input id="topic" placeholder="Enter your topic..." aria-label="Enter your topic">
+
+<button id="generate">Generate</button>
+
+<div id="result" style="margin-top:25px"></div>
+</section>
+
+<section class="card">
+
+<h2>How to use this tool</h2>
+
+<p>Enter your topic, click Generate, and edit the result to match your content. Always check facts and claims before publishing.</p>
+
+<h2>Tips</h2>
+
+<ul>
+<li>Keep the caption natural and relevant.</li>
+<li>Add details that give the audience context.</li>
+<li>Use a call to action only when it makes sense.</li>
+</ul>
+
+</section>
+
+<section class="card">
+
+<h2>Frequently asked questions</h2>
+
+<details>
+<summary>What is an Instagram caption generator?</summary>
+<p>It creates starting caption ideas from a topic so you can edit them for your Instagram post or Reel.</p>
+</details>
+
+<details>
+<summary>Can I customize the caption?</summary>
+<p>Yes. The generated caption is only a starting point.</p>
+</details>
+
+<details>
+<summary>Is the tool free?</summary>
+<p>Yes. It is available as a free browser-based CreatorlyAI tool.</p>
+</details>
+
+</section>
+
+</main>
+
+<footer>
+© 2026 CreatorlyAI · Free creator tools
+</footer>
+
+<script>
+const TEMPLATES=[
+'✨ {x} — creating, learning and sharing one step at a time. What do you think?',
+'Building something around {x} and enjoying the process. Save this post if you want to come back to it later.',
+'A little update on {x} 🚀 More experiments, more learning, more progress.'
+];
+
+function escapeHtml(s){
+return String(s).replace(/[&<>"']/g,m=>({
+"&":"&amp;",
+"<":"&lt;",
+">":"&gt;",
+'"':"&quot;",
+"'":"&#039;"
+}[m]));
+}
+
+function show(data){
+document.getElementById('result').innerHTML=
+'<h2>Generated ideas</h2>'+
+data.map(x=>'<div class="result-item">'+escapeHtml(x)+'</div>').join('');
+}
+
+document.getElementById('generate').addEventListener('click',()=>{
+const x=document.getElementById('topic').value.trim();
+
+if(!x){
+document.getElementById('result').innerHTML='<p>Enter a topic first.</p>';
+return;
+}
+
+show(
+TEMPLATES.map(s=>
+s.replaceAll('{x}',x)
+.replaceAll('{base}',x.toLowerCase().replace(/[^a-z0-9]/g,''))
+)
+);
+});
+
+document.getElementById('topic').addEventListener('keydown',e=>{
+if(e.key==='Enter'){
+document.getElementById('generate').click();
+}
+});
+</script>
+
+</body>
+</html>
