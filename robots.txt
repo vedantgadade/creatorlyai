@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://creatorlyai-search-console-ready.vercel.app/sitemap.xml
