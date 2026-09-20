@@ -5,9 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Hashtag Generator | CreatorlyAI</title>
-  <meta name="description" content="Generate relevant hashtag ideas for Instagram, YouTube and social media with CreatorlyAI's free Hashtag Generator.">
+  <meta name="description" content="Create relevant hashtag ideas with CreatorlyAI's free Hashtag Generator. Enter your topic and get hashtag suggestions for social media content.">
 
   <link rel="canonical" href="https://creatorlyai-search-console-ready.vercel.app/hashtag-generator/">
+
+  <!-- Breadcrumb structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "CreatorlyAI",
+        "item": "https://creatorlyai-search-console-ready.vercel.app/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Hashtag Generator",
+        "item": "https://creatorlyai-search-console-ready.vercel.app/hashtag-generator/"
+      }
+    ]
+  }
+  </script>
 
   <style>
     body {
@@ -70,9 +92,9 @@
   <h1>Hashtag Generator</h1>
 
   <p>
-    Generate hashtag ideas for Instagram, YouTube and social media content.
-    Enter your topic and get a simple list of relevant hashtags to customize
-    for your post.
+    Create hashtag ideas for your social media content. Enter your topic
+    and get a simple set of hashtags that you can review and customize
+    for your post or video.
   </p>
 
   <div class="box">
@@ -81,7 +103,7 @@
     <input
       id="topic"
       type="text"
-      placeholder="Example: Fitness tips"
+      placeholder="Example: YouTube growth"
     >
 
     <button onclick="generateHashtags()">Generate Hashtags</button>
@@ -92,30 +114,39 @@
   <h2>How to use the Hashtag Generator</h2>
 
   <p>
-    Enter your content topic and click Generate Hashtags. You can then
-    customize the suggested hashtags to match your specific post.
+    Enter your topic and click Generate Hashtags. The tool creates
+    a combination of a topic hashtag and general creator and social
+    media hashtags.
   </p>
 
   <h2>Tips for using hashtags</h2>
 
   <ul>
-    <li>Use hashtags related to your actual content.</li>
-    <li>Mix broad and specific topics.</li>
-    <li>Avoid unrelated hashtags.</li>
-    <li>Keep your hashtags relevant to your audience.</li>
-    <li>Review current platform recommendations before publishing.</li>
+    <li>Use hashtags that are relevant to your content.</li>
+    <li>Avoid adding unrelated hashtags just to reach more people.</li>
+    <li>Mix specific topic hashtags with broader relevant hashtags.</li>
+    <li>Check the platform's current hashtag recommendations before publishing.</li>
+    <li>Keep your hashtags focused on the audience you want to reach.</li>
   </ul>
 
   <h2>Frequently Asked Questions</h2>
 
   <h3>Is this Hashtag Generator free?</h3>
-  <p>Yes. CreatorlyAI provides this tool for free.</p>
+  <p>
+    Yes. The tool is available for free on CreatorlyAI.
+  </p>
 
-  <h3>Where can I use these hashtags?</h3>
-  <p>You can customize the suggestions for Instagram, YouTube and other social platforms.</p>
+  <h3>Which platforms can I use these hashtags on?</h3>
+  <p>
+    You can use the generated ideas as a starting point for platforms
+    such as Instagram, YouTube and other social media platforms.
+  </p>
 
-  <h3>Should I use every generated hashtag?</h3>
-  <p>No. Choose hashtags that are genuinely relevant to your content.</p>
+  <h3>Can I edit the generated hashtags?</h3>
+  <p>
+    Yes. Review the suggestions and remove or add hashtags based on
+    your specific content and audience.
+  </p>
 
   <script>
     function generateHashtags() {
@@ -127,21 +158,20 @@
         return;
       }
 
-      const clean = topic
+      const cleanTopic = topic
         .toLowerCase()
         .replace(/[^a-z0-9]+/g, "")
         .slice(0, 20);
 
       result.textContent =
-        "#" + clean + "\n" +
-        "#ContentCreator\n" +
-        "#YouTube\n" +
-        "#Instagram\n" +
-        "#CreatorTips\n" +
-        "#SocialMedia\n" +
-        "#ContentCreation\n" +
-        "#CreatorEconomy\n" +
-        "#DigitalCreator";
+        "#" + cleanTopic + " " +
+        "#ContentCreator " +
+        "#YouTube " +
+        "#Instagram " +
+        "#CreatorTips " +
+        "#SocialMedia " +
+        "#ContentCreation " +
+        "#CreatorEconomy";
     }
   </script>
 
