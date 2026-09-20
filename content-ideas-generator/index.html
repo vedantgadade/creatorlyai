@@ -1,19 +1,177 @@
-<!doctype html><html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Content Ideas Generator | CreatorlyAI</title><meta name="description" content="Generate content ideas with CreatorlyAI's free Content Ideas Generator. Enter a topic and get useful ideas for YouTube, Instagram and social media.">
-<link rel="canonical" href="https://creatorlyai-search-console-ready.vercel.app/content-ideas-generator/">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"CreatorlyAI","item":"https://creatorlyai-search-console-ready.vercel.app/"},{"@type":"ListItem","position":2,"name":"Content Ideas Generator","item":"https://creatorlyai-search-console-ready.vercel.app/content-ideas-generator/"}]}</script>
-<style>*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#f6f7fb;color:#111827;line-height:1.6}nav{padding:18px 6%;background:#fff;border-bottom:1px solid #e5e7eb}nav a{text-decoration:none;color:#111827;font-weight:700}main{max-width:900px;margin:auto;padding:50px 20px}.card{background:#fff;border:1px solid #e5e7eb;border-radius:18px;padding:28px;margin-bottom:22px}h1{font-size:42px;line-height:1.15}input{width:100%;padding:15px;border:1px solid #d1d5db;border-radius:10px;font-size:16px;margin:12px 0}button{border:0;border-radius:10px;padding:14px 20px;font-size:16px;font-weight:700;cursor:pointer;background:#111827;color:#fff}.result-item{padding:14px 0;border-bottom:1px solid #eee}details{padding:14px 0;border-bottom:1px solid #eee}summary{cursor:pointer;font-weight:700}footer{text-align:center;padding:30px;color:#6b7280}.small{color:#6b7280}</style>
-</head><body><nav><a href="https://creatorlyai-search-console-ready.vercel.app/">← CreatorlyAI</a></nav><main>
-<section class="card"><p class="small">CreatorlyAI Free Tool</p><h1>Content Ideas Generator</h1><p>Generate simple content ideas for YouTube, Instagram, Shorts and social media. Enter a topic and get ideas you can turn into posts or videos.</p>
-<input id="topic" placeholder="Enter your topic..." aria-label="Enter your topic"><button id="generate">Generate</button><div id="result" style="margin-top:25px"></div></section>
-<section class="card"><h2>How to use this tool</h2><p>Enter your topic, click Generate, and edit the result to match your content. Always check facts and claims before publishing.</p><h2>Tips</h2><ul><li>Choose ideas that are useful to your audience.</li><li>Turn one good idea into multiple formats.</li><li>Add your own examples and experience.</li></ul></section>
-<section class="card"><h2>Frequently asked questions</h2><details><summary>What is a content ideas generator?</summary><p>It creates topic and format ideas that can help you plan future posts and videos.</p></details><details><summary>What platforms can I use these ideas for?</summary><p>The ideas can be adapted for YouTube, Shorts, Instagram, Reels and other social platforms.</p></details><details><summary>Are these guaranteed viral ideas?</summary><p>No. They are starting ideas. Audience interest and performance depend on many factors.</p></details></section></main>
-<footer>© 2026 CreatorlyAI · Free creator tools</footer>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PG16GCTCJ8"></script>
 <script>
-const TEMPLATES=['5 mistakes beginners make with {x}', 'A beginner’s guide to {x}', '7 useful tips about {x}', 'Things I wish I knew about {x}', '{x}: myths vs facts', 'How to improve at {x} step by step', 'A quick checklist for {x}'];
-function escapeHtml(s){return String(s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));}
-function show(data){document.getElementById('result').innerHTML='<h2>Generated ideas</h2>'+data.map(x=>'<div class="result-item">'+escapeHtml(x)+'</div>').join('');}
-document.getElementById('generate').addEventListener('click',()=>{const x=document.getElementById('topic').value.trim();if(!x){document.getElementById('result').innerHTML='<p>Enter a topic first.</p>';return;}show(TEMPLATES.map(s=>s.replaceAll('{x}',x).replaceAll('{base}',x.toLowerCase().replace(/[^a-z0-9]/g,''))));});
-document.getElementById('topic').addEventListener('keydown',e=>{if(e.key==='Enter')document.getElementById('generate').click();});
-</script></body></html>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PG16GCTCJ8');
+</script>
+
+<title>Content Ideas Generator | CreatorlyAI</title>
+<meta name="description" content="Generate content ideas with CreatorlyAI's free Content Ideas Generator. Enter a topic and get useful ideas for YouTube, Instagram and social media.">
+
+<link rel="canonical" href="https://creatorlyai-search-console-ready.vercel.app/content-ideas-generator/">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {
+      "@type":"ListItem",
+      "position":1,
+      "name":"CreatorlyAI",
+      "item":"https://creatorlyai-search-console-ready.vercel.app/"
+    },
+    {
+      "@type":"ListItem",
+      "position":2,
+      "name":"Content Ideas Generator",
+      "item":"https://creatorlyai-search-console-ready.vercel.app/content-ideas-generator/"
+    }
+  ]
+}
+</script>
+
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f6f7fb;color:#111827;line-height:1.6}
+nav{padding:18px 6%;background:#fff;border-bottom:1px solid #e5e7eb}
+nav a{text-decoration:none;color:#111827;font-weight:700}
+main{max-width:900px;margin:auto;padding:50px 20px}
+.card{background:#fff;border:1px solid #e5e7eb;border-radius:18px;padding:28px;margin-bottom:22px}
+h1{font-size:42px;line-height:1.15}
+input{width:100%;padding:15px;border:1px solid #d1d5db;border-radius:10px;font-size:16px;margin:12px 0}
+button{border:0;border-radius:10px;padding:14px 20px;font-size:16px;font-weight:700;cursor:pointer;background:#111827;color:#fff}
+.result-item{padding:14px 0;border-bottom:1px solid #eee}
+details{padding:14px 0;border-bottom:1px solid #eee}
+summary{cursor:pointer;font-weight:700}
+footer{text-align:center;padding:30px;color:#6b7280}
+.small{color:#6b7280}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="https://creatorlyai-search-console-ready.vercel.app/">← CreatorlyAI</a>
+</nav>
+
+<main>
+
+<section class="card">
+<p class="small">CreatorlyAI Free Tool</p>
+
+<h1>Content Ideas Generator</h1>
+
+<p>Generate simple content ideas for YouTube, Instagram, Shorts and social media. Enter a topic and get ideas you can turn into posts or videos.</p>
+
+<input id="topic" placeholder="Enter your topic..." aria-label="Enter your topic">
+
+<button id="generate">Generate</button>
+
+<div id="result" style="margin-top:25px"></div>
+</section>
+
+<section class="card">
+
+<h2>How to use this tool</h2>
+
+<p>Enter your topic, click Generate, and edit the result to match your content. Always check facts and claims before publishing.</p>
+
+<h2>Tips</h2>
+
+<ul>
+<li>Choose ideas that are useful to your audience.</li>
+<li>Turn one good idea into multiple formats.</li>
+<li>Add your own examples and experience.</li>
+</ul>
+
+</section>
+
+<section class="card">
+
+<h2>Frequently asked questions</h2>
+
+<details>
+<summary>What is a content ideas generator?</summary>
+<p>It creates topic and format ideas that can help you plan future posts and videos.</p>
+</details>
+
+<details>
+<summary>What platforms can I use these ideas for?</summary>
+<p>The ideas can be adapted for YouTube, Shorts, Instagram, Reels and other social platforms.</p>
+</details>
+
+<details>
+<summary>Are these guaranteed viral ideas?</summary>
+<p>No. They are starting ideas. Audience interest and performance depend on many factors.</p>
+</details>
+
+</section>
+
+</main>
+
+<footer>
+© 2026 CreatorlyAI · Free creator tools
+</footer>
+
+<script>
+const TEMPLATES=[
+'5 mistakes beginners make with {x}',
+'A beginner’s guide to {x}',
+'7 useful tips about {x}',
+'Things I wish I knew about {x}',
+'{x}: myths vs facts',
+'How to improve at {x} step by step',
+'A quick checklist for {x}'
+];
+
+function escapeHtml(s){
+return String(s).replace(/[&<>"']/g,m=>({
+"&":"&amp;",
+"<":"&lt;",
+">":"&gt;",
+'"':"&quot;",
+"'":"&#039;"
+}[m]));
+}
+
+function show(data){
+document.getElementById('result').innerHTML=
+'<h2>Generated ideas</h2>'+
+data.map(x=>'<div class="result-item">'+escapeHtml(x)+'</div>').join('');
+}
+
+document.getElementById('generate').addEventListener('click',()=>{
+const x=document.getElementById('topic').value.trim();
+
+if(!x){
+document.getElementById('result').innerHTML='<p>Enter a topic first.</p>';
+return;
+}
+
+show(
+TEMPLATES.map(s=>
+s.replaceAll('{x}',x)
+.replaceAll('{base}',x.toLowerCase().replace(/[^a-z0-9]/g,''))
+)
+);
+});
+
+document.getElementById('topic').addEventListener('keydown',e=>{
+if(e.key==='Enter'){
+document.getElementById('generate').click();
+}
+});
+</script>
+
+</body>
+</html>
