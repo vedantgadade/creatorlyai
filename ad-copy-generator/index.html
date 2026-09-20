@@ -5,9 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Ad Copy Generator | CreatorlyAI</title>
-  <meta name="description" content="Create simple advertising copy ideas with CreatorlyAI's free Ad Copy Generator. Enter your product or topic and generate a headline, body and call to action.">
+  <meta name="description" content="Create simple advertising copy ideas with CreatorlyAI's free Ad Copy Generator. Enter your product or topic and get a headline, body and call to action.">
 
   <link rel="canonical" href="https://creatorlyai-search-console-ready.vercel.app/ad-copy-generator/">
+
+  <!-- Breadcrumb structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "CreatorlyAI",
+        "item": "https://creatorlyai-search-console-ready.vercel.app/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Ad Copy Generator",
+        "item": "https://creatorlyai-search-console-ready.vercel.app/ad-copy-generator/"
+      }
+    ]
+  }
+  </script>
 
   <style>
     body {
@@ -70,9 +92,9 @@
   <h1>Ad Copy Generator</h1>
 
   <p>
-    Create simple advertising copy ideas for products, services and creator
-    projects. Enter your topic and generate a headline, body text and call
-    to action that you can customize.
+    Create simple advertising copy ideas for your product, service or offer.
+    Enter your topic and get a headline, body text and call to action that
+    you can customize for your campaign.
   </p>
 
   <div class="box">
@@ -84,7 +106,7 @@
       placeholder="Example: Online fitness course"
     >
 
-    <button onclick="generateAd()">Generate Ad Copy</button>
+    <button onclick="generateAdCopy()">Generate Ad Copy</button>
 
     <div id="result"></div>
   </div>
@@ -92,34 +114,42 @@
   <h2>How to use the Ad Copy Generator</h2>
 
   <p>
-    Enter the product, service or topic you want to promote and click
-    Generate Ad Copy. Review the result and customize it for your audience,
-    platform and offer.
+    Enter the product, service or offer you want to promote and click
+    Generate Ad Copy. The tool creates a simple starting structure that
+    you can edit for your advertising platform and audience.
   </p>
 
   <h2>Tips for better ad copy</h2>
 
   <ul>
-    <li>Explain the main benefit clearly.</li>
-    <li>Keep the headline short and easy to understand.</li>
-    <li>Focus on the audience's needs.</li>
+    <li>Clearly explain what you are offering.</li>
+    <li>Focus on a useful benefit for the audience.</li>
+    <li>Keep the message simple and easy to understand.</li>
     <li>Use a clear call to action.</li>
-    <li>Make sure your claims accurately describe your offer.</li>
+    <li>Make sure your claims are accurate and supported.</li>
   </ul>
 
   <h2>Frequently Asked Questions</h2>
 
   <h3>Is this Ad Copy Generator free?</h3>
-  <p>Yes. CreatorlyAI provides this tool for free.</p>
+  <p>
+    Yes. The tool is available for free on CreatorlyAI.
+  </p>
 
-  <h3>What can I create ad copy for?</h3>
-  <p>You can use it as a starting point for products, services, websites and creator projects.</p>
+  <h3>What can I use the generated copy for?</h3>
+  <p>
+    You can use it as a starting point for social media ads, promotional
+    posts, landing pages and other marketing content.
+  </p>
 
-  <h3>Can I edit the generated copy?</h3>
-  <p>Yes. Always customize the generated copy to accurately match your actual offer.</p>
+  <h3>Can I customize the generated ad copy?</h3>
+  <p>
+    Yes. You should edit the headline, body and call to action to match
+    your product, audience and advertising platform.
+  </p>
 
   <script>
-    function generateAd() {
+    function generateAdCopy() {
       const topic = document.getElementById("topic").value.trim();
       const result = document.getElementById("result");
 
@@ -129,9 +159,9 @@
       }
 
       result.textContent =
-        "HEADLINE: Make " + topic + " easier today\n\n" +
-        "BODY: Discover a simple way to get started with " + topic +
-        ". Save time, focus on what matters and take the next step with confidence.\n\n" +
+        "Headline: Make " + topic + " easier today\n\n" +
+        "Body: Save time and get started with a simple solution for " +
+        topic + ". Try it now and see the difference.\n\n" +
         "CTA: Get Started";
     }
   </script>
