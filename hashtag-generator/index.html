@@ -1,21 +1,332 @@
-<!doctype html><html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Hashtag Generator | CreatorlyAI</title><meta name="description" content="Create relevant hashtag ideas with CreatorlyAI's free Hashtag Generator. Enter a topic and get hashtag suggestions for social media content.">
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Hashtag Generator for Instagram & YouTube | CreatorlyAI</title>
+
+<meta name="description" content="Free hashtag generator for Instagram, YouTube and Shorts. Generate relevant hashtag ideas for your content, review them and customize them before publishing.">
+
 <link rel="canonical" href="https://creatorlyai-search-console-ready.vercel.app/hashtag-generator/">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"CreatorlyAI","item":"https://creatorlyai-search-console-ready.vercel.app/"},{"@type":"ListItem","position":2,"name":"Hashtag Generator","item":"https://creatorlyai-search-console-ready.vercel.app/hashtag-generator/"}]}</script>
-<style>*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#f6f7fb;color:#111827;line-height:1.6}nav{padding:18px 6%;background:#fff;border-bottom:1px solid #e5e7eb}nav a{text-decoration:none;color:#111827;font-weight:700}main{max-width:900px;margin:auto;padding:50px 20px}.card{background:#fff;border:1px solid #e5e7eb;border-radius:18px;padding:28px;margin-bottom:22px}h1{font-size:42px;line-height:1.15}input{width:100%;padding:15px;border:1px solid #d1d5db;border-radius:10px;font-size:16px;margin:12px 0}button{border:0;border-radius:10px;padding:14px 20px;font-size:16px;font-weight:700;cursor:pointer;background:#111827;color:#fff}.result-item{padding:14px 0;border-bottom:1px solid #eee}details{padding:14px 0;border-bottom:1px solid #eee}summary{cursor:pointer;font-weight:700}footer{text-align:center;padding:30px;color:#6b7280}.small{color:#6b7280}</style>
-</head><body><nav><a href="https://creatorlyai-search-console-ready.vercel.app/">← CreatorlyAI</a></nav><main>
-<section class="card"><p class="small">CreatorlyAI Free Tool</p><h1>Hashtag Generator</h1><p>Create hashtag ideas for Instagram, YouTube, Shorts and social media posts. Enter a topic and get a simple list you can review and customize.</p>
-<input id="topic" placeholder="Enter your topic..." aria-label="Enter your topic"><button id="generate">Generate</button><div id="result" style="margin-top:25px"></div></section>
-<section class="card"><h2>How to use this tool</h2><p>Enter your topic, click Generate, and edit the result to match your content. Always check facts and claims before publishing.</p><h2>Tips</h2><ul><li>Use hashtags that match your actual topic.</li><li>Avoid adding unrelated popular hashtags.</li><li>Test different relevant hashtag groups over time.</li></ul></section>
-<section class="card"><h2>Frequently asked questions</h2><details><summary>What does a hashtag generator do?</summary><p>It creates hashtag ideas related to the topic you enter.</p></details><details><summary>Can I use these hashtags on Instagram and YouTube?</summary><p>You can review and adapt the suggestions for the platform and content.</p></details><details><summary>Should I use every suggested hashtag?</summary><p>No. Select only hashtags that are relevant to your specific post or video.</p></details></section></main>
-<footer>© 2026 CreatorlyAI · Free creator tools</footer>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {
+      "@type":"ListItem",
+      "position":1,
+      "name":"CreatorlyAI",
+      "item":"https://creatorlyai-search-console-ready.vercel.app/"
+    },
+    {
+      "@type":"ListItem",
+      "position":2,
+      "name":"Hashtag Generator",
+      "item":"https://creatorlyai-search-console-ready.vercel.app/hashtag-generator/"
+    }
+  ]
+}
+</script>
+
+<style>
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#f6f7fb;
+  color:#111827;
+  line-height:1.6
+}
+
+nav{
+  padding:18px 6%;
+  background:#fff;
+  border-bottom:1px solid #e5e7eb
+}
+
+nav a{
+  text-decoration:none;
+  color:#111827;
+  font-weight:700
+}
+
+main{
+  max-width:900px;
+  margin:auto;
+  padding:50px 20px
+}
+
+.card{
+  background:#fff;
+  border:1px solid #e5e7eb;
+  border-radius:18px;
+  padding:28px;
+  margin-bottom:22px
+}
+
+h1{
+  font-size:42px;
+  line-height:1.15
+}
+
+h2{
+  margin-top:28px
+}
+
+input{
+  width:100%;
+  padding:15px;
+  border:1px solid #d1d5db;
+  border-radius:10px;
+  font-size:16px;
+  margin:12px 0
+}
+
+button{
+  border:0;
+  border-radius:10px;
+  padding:14px 20px;
+  font-size:16px;
+  font-weight:700;
+  cursor:pointer;
+  background:#111827;
+  color:#fff
+}
+
+.result-item{
+  padding:14px 0;
+  border-bottom:1px solid #eee;
+  font-weight:600
+}
+
+details{
+  padding:14px 0;
+  border-bottom:1px solid #eee
+}
+
+summary{
+  cursor:pointer;
+  font-weight:700
+}
+
+footer{
+  text-align:center;
+  padding:30px;
+  color:#6b7280
+}
+
+.small{
+  color:#6b7280
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="https://creatorlyai-search-console-ready.vercel.app/">
+← CreatorlyAI
+</a>
+</nav>
+
+<main>
+
+<section class="card">
+
+<p class="small">CreatorlyAI Free Creator Tool</p>
+
+<h1>Free Hashtag Generator</h1>
+
+<p>
+Generate relevant hashtag ideas for Instagram, YouTube, YouTube Shorts and other social media content. Enter your topic and get hashtag suggestions you can review and customize.
+</p>
+
+<input
+id="topic"
+placeholder="Example: YouTube growth"
+aria-label="Enter your topic"
+>
+
+<button id="generate">Generate Hashtags</button>
+
+<div id="result" style="margin-top:25px"></div>
+
+</section>
+
+
+<section class="card">
+
+<h2>What is a Hashtag Generator?</h2>
+
+<p>
+A hashtag generator helps creators find hashtag ideas related to a specific topic. Instead of creating every hashtag manually, you can enter a topic and quickly get a starting list of relevant hashtag suggestions.
+</p>
+
+<p>
+CreatorlyAI's free hashtag generator can be used for Instagram posts, YouTube videos, YouTube Shorts and other social media content.
+</p>
+
+
+<h2>How to use the Hashtag Generator</h2>
+
+<ol>
+<li>Enter your content topic.</li>
+<li>Click the Generate Hashtags button.</li>
+<li>Review the suggested hashtags.</li>
+<li>Choose only the hashtags that are relevant to your content.</li>
+<li>Customize the list before publishing.</li>
+</ol>
+
+
+<h2>Hashtag tips for creators</h2>
+
+<ul>
+<li>Use hashtags that are directly related to your content.</li>
+<li>Try different relevant hashtag combinations.</li>
+<li>Do not add unrelated hashtags just because they are popular.</li>
+<li>Keep your hashtags relevant to the audience you want to reach.</li>
+<li>Review your results before publishing.</li>
+</ul>
+
+</section>
+
+
+<section class="card">
+
+<h2>Hashtag Generator for YouTube</h2>
+
+<p>
+You can use this tool to create starting ideas for YouTube and YouTube Shorts hashtags. Enter a video topic such as gaming, fitness, education or YouTube growth and review the generated suggestions.
+</p>
+
+
+<h2>Hashtag Generator for Instagram</h2>
+
+<p>
+For Instagram content, enter the subject of your post or Reel and use the generated suggestions as a starting point. Choose hashtags that accurately describe your content.
+</p>
+
+
+<h2>YouTube Hashtag Generator Tips</h2>
+
+<p>
+A useful YouTube hashtag should match the actual topic of your video. For example, a video about YouTube growth can use relevant creator and YouTube-related hashtag ideas rather than unrelated trending terms.
+</p>
+
+</section>
+
+
+<section class="card">
+
+<h2>Frequently Asked Questions</h2>
+
+<details>
+<summary>What does a hashtag generator do?</summary>
+<p>
+A hashtag generator creates hashtag ideas based on the topic you enter.
+</p>
+</details>
+
+<details>
+<summary>Can I use this hashtag generator for YouTube?</summary>
+<p>
+Yes. You can use the suggestions as a starting point for YouTube videos and YouTube Shorts.
+</p>
+</details>
+
+<details>
+<summary>Can I use this hashtag generator for Instagram?</summary>
+<p>
+Yes. You can generate ideas for Instagram posts and other social media content.
+</p>
+</details>
+
+<details>
+<summary>Should I use every suggested hashtag?</summary>
+<p>
+No. Review the suggestions and select only hashtags that are relevant to your specific content.
+</p>
+</details>
+
+<details>
+<summary>Is this hashtag generator free?</summary>
+<p>
+Yes. The CreatorlyAI hashtag generator is available as a free browser-based creator tool.
+</p>
+</details>
+
+</section>
+
+</main>
+
+<footer>
+© 2026 CreatorlyAI · Free creator tools
+</footer>
+
+
 <script>
-const TEMPLATES=['#{base}', '#{base}creator', '#{base}tips', '#{base}content', '#contentcreator', '#socialmedia', '#youtubetips', '#creator'];
-function escapeHtml(s){return String(s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));}
-function show(data){document.getElementById('result').innerHTML='<h2>Generated ideas</h2>'+data.map(x=>'<div class="result-item">'+escapeHtml(x)+'</div>').join('');}
-document.getElementById('generate').addEventListener('click',()=>{const x=document.getElementById('topic').value.trim();if(!x){document.getElementById('result').innerHTML='<p>Enter a topic first.</p>';return;}const words=x.toLowerCase().replace(/[^a-z0-9 ]/g,'').trim().split(/\s+/).filter(Boolean);
-const base=words.join('');
-show(['#'+base,'#'+base+'creator','#'+base+'tips','#'+base+'content','#contentcreator','#socialmedia','#youtubetips','#creator']);});
-document.getElementById('topic').addEventListener('keydown',e=>{if(e.key==='Enter')document.getElementById('generate').click();});
-</script></body></html>
+
+function escapeHtml(s){
+  return String(s).replace(/[&<>"']/g,m=>({
+    "&":"&amp;",
+    "<":"&lt;",
+    ">":"&gt;",
+    '"':"&quot;",
+    "'":"&#039;"
+  }[m]));
+}
+
+function show(data){
+  document.getElementById("result").innerHTML =
+    "<h2>Generated Hashtag Ideas</h2>" +
+    data.map(x =>
+      '<div class="result-item">'+escapeHtml(x)+'</div>'
+    ).join("");
+}
+
+document.getElementById("generate").addEventListener("click",()=>{
+
+  const x=document.getElementById("topic").value.trim();
+
+  if(!x){
+    document.getElementById("result").innerHTML=
+      "<p>Enter a topic first.</p>";
+    return;
+  }
+
+  const words=x
+    .toLowerCase()
+    .replace(/[^a-z0-9 ]/g,"")
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean);
+
+  const base=words.join("");
+
+  show([
+    "#"+base,
+    "#"+base+"creator",
+    "#"+base+"tips",
+    "#"+base+"content",
+    "#contentcreator",
+    "#socialmedia",
+    "#youtubetips",
+    "#creator"
+  ]);
+
+});
+
+document.getElementById("topic").addEventListener("keydown",e=>{
+  if(e.key==="Enter"){
+    document.getElementById("generate").click();
+  }
+});
+
+</script>
+
+</body>
+</html>
