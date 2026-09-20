@@ -1,19 +1,171 @@
-<!doctype html><html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Thumbnail Prompt Generator | CreatorlyAI</title><meta name="description" content="Create YouTube thumbnail prompt ideas with CreatorlyAI's free Thumbnail Prompt Generator. Enter a topic and get a detailed prompt you can customize.">
-<link rel="canonical" href="https://creatorlyai-search-console-ready.vercel.app/thumbnail-prompt-generator/">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"CreatorlyAI","item":"https://creatorlyai-search-console-ready.vercel.app/"},{"@type":"ListItem","position":2,"name":"Thumbnail Prompt Generator","item":"https://creatorlyai-search-console-ready.vercel.app/thumbnail-prompt-generator/"}]}</script>
-<style>*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#f6f7fb;color:#111827;line-height:1.6}nav{padding:18px 6%;background:#fff;border-bottom:1px solid #e5e7eb}nav a{text-decoration:none;color:#111827;font-weight:700}main{max-width:900px;margin:auto;padding:50px 20px}.card{background:#fff;border:1px solid #e5e7eb;border-radius:18px;padding:28px;margin-bottom:22px}h1{font-size:42px;line-height:1.15}input{width:100%;padding:15px;border:1px solid #d1d5db;border-radius:10px;font-size:16px;margin:12px 0}button{border:0;border-radius:10px;padding:14px 20px;font-size:16px;font-weight:700;cursor:pointer;background:#111827;color:#fff}.result-item{padding:14px 0;border-bottom:1px solid #eee}details{padding:14px 0;border-bottom:1px solid #eee}summary{cursor:pointer;font-weight:700}footer{text-align:center;padding:30px;color:#6b7280}.small{color:#6b7280}</style>
-</head><body><nav><a href="https://creatorlyai-search-console-ready.vercel.app/">← CreatorlyAI</a></nav><main>
-<section class="card"><p class="small">CreatorlyAI Free Tool</p><h1>Thumbnail Prompt Generator</h1><p>Create detailed thumbnail prompt ideas for YouTube videos. Enter your video topic and get a prompt you can customize for an image-generation or design workflow.</p>
-<input id="topic" placeholder="Enter your topic..." aria-label="Enter your topic"><button id="generate">Generate</button><div id="result" style="margin-top:25px"></div></section>
-<section class="card"><h2>How to use this tool</h2><p>Enter your topic, click Generate, and edit the result to match your content. Always check facts and claims before publishing.</p><h2>Tips</h2><ul><li>Keep the main subject easy to recognize.</li><li>Use short, readable thumbnail text.</li><li>Make the visual match the actual video.</li></ul></section>
-<section class="card"><h2>Frequently asked questions</h2><details><summary>Does this tool create a thumbnail image?</summary><p>No. It creates a text prompt. You can use the prompt in an image or design tool of your choice.</p></details><details><summary>What should a good thumbnail prompt include?</summary><p>It can describe the subject, composition, mood, lighting, background and short thumbnail text.</p></details><details><summary>Is this tool free?</summary><p>Yes. The tool is free to use in your browser.</p></details></section></main>
-<footer>© 2026 CreatorlyAI · Free creator tools</footer>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PG16GCTCJ8"></script>
 <script>
-const TEMPLATES=['YouTube thumbnail for “{x}”, bold main subject in the center, strong facial expression or clear visual action, simple high-contrast background, large readable 2–4 word text, clean composition, dramatic lighting, professional creator style, designed to be clear at small size.'];
-function escapeHtml(s){return String(s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));}
-function show(data){document.getElementById('result').innerHTML='<h2>Generated ideas</h2>'+data.map(x=>'<div class="result-item">'+escapeHtml(x)+'</div>').join('');}
-document.getElementById('generate').addEventListener('click',()=>{const x=document.getElementById('topic').value.trim();if(!x){document.getElementById('result').innerHTML='<p>Enter a topic first.</p>';return;}show(TEMPLATES.map(s=>s.replaceAll('{x}',x).replaceAll('{base}',x.toLowerCase().replace(/[^a-z0-9]/g,''))));});
-document.getElementById('topic').addEventListener('keydown',e=>{if(e.key==='Enter')document.getElementById('generate').click();});
-</script></body></html>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PG16GCTCJ8');
+</script>
+
+<title>Thumbnail Prompt Generator | CreatorlyAI</title>
+<meta name="description" content="Create YouTube thumbnail prompt ideas with CreatorlyAI's free Thumbnail Prompt Generator. Enter a topic and get a detailed prompt you can customize.">
+
+<link rel="canonical" href="https://creatorlyai-search-console-ready.vercel.app/thumbnail-prompt-generator/">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {
+      "@type":"ListItem",
+      "position":1,
+      "name":"CreatorlyAI",
+      "item":"https://creatorlyai-search-console-ready.vercel.app/"
+    },
+    {
+      "@type":"ListItem",
+      "position":2,
+      "name":"Thumbnail Prompt Generator",
+      "item":"https://creatorlyai-search-console-ready.vercel.app/thumbnail-prompt-generator/"
+    }
+  ]
+}
+</script>
+
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f6f7fb;color:#111827;line-height:1.6}
+nav{padding:18px 6%;background:#fff;border-bottom:1px solid #e5e7eb}
+nav a{text-decoration:none;color:#111827;font-weight:700}
+main{max-width:900px;margin:auto;padding:50px 20px}
+.card{background:#fff;border:1px solid #e5e7eb;border-radius:18px;padding:28px;margin-bottom:22px}
+h1{font-size:42px;line-height:1.15}
+input{width:100%;padding:15px;border:1px solid #d1d5db;border-radius:10px;font-size:16px;margin:12px 0}
+button{border:0;border-radius:10px;padding:14px 20px;font-size:16px;font-weight:700;cursor:pointer;background:#111827;color:#fff}
+.result-item{padding:14px 0;border-bottom:1px solid #eee}
+details{padding:14px 0;border-bottom:1px solid #eee}
+summary{cursor:pointer;font-weight:700}
+footer{text-align:center;padding:30px;color:#6b7280}
+.small{color:#6b7280}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="https://creatorlyai-search-console-ready.vercel.app/">← CreatorlyAI</a>
+</nav>
+
+<main>
+
+<section class="card">
+<p class="small">CreatorlyAI Free Tool</p>
+
+<h1>Thumbnail Prompt Generator</h1>
+
+<p>Create detailed thumbnail prompt ideas for YouTube videos. Enter your video topic and get a prompt you can customize for an image-generation or design workflow.</p>
+
+<input id="topic" placeholder="Enter your topic..." aria-label="Enter your topic">
+
+<button id="generate">Generate</button>
+
+<div id="result" style="margin-top:25px"></div>
+</section>
+
+<section class="card">
+
+<h2>How to use this tool</h2>
+
+<p>Enter your topic, click Generate, and edit the result to match your content. Always check facts and claims before publishing.</p>
+
+<h2>Tips</h2>
+
+<ul>
+<li>Keep the main subject easy to recognize.</li>
+<li>Use short, readable thumbnail text.</li>
+<li>Make the visual match the actual video.</li>
+</ul>
+
+</section>
+
+<section class="card">
+
+<h2>Frequently asked questions</h2>
+
+<details>
+<summary>Does this tool create a thumbnail image?</summary>
+<p>No. It creates a text prompt. You can use the prompt in an image or design tool of your choice.</p>
+</details>
+
+<details>
+<summary>What should a good thumbnail prompt include?</summary>
+<p>It can describe the subject, composition, mood, lighting, background and short thumbnail text.</p>
+</details>
+
+<details>
+<summary>Is this tool free?</summary>
+<p>Yes. The tool is free to use in your browser.</p>
+</details>
+
+</section>
+
+</main>
+
+<footer>
+© 2026 CreatorlyAI · Free creator tools
+</footer>
+
+<script>
+const TEMPLATES=[
+'YouTube thumbnail for “{x}”, bold main subject in the center, strong facial expression or clear visual action, simple high-contrast background, large readable 2–4 word text, clean composition, dramatic lighting, professional creator style, designed to be clear at small size.'
+];
+
+function escapeHtml(s){
+return String(s).replace(/[&<>"']/g,m=>({
+"&":"&amp;",
+"<":"&lt;",
+">":"&gt;",
+'"':"&quot;",
+"'":"&#039;"
+}[m]));
+}
+
+function show(data){
+document.getElementById('result').innerHTML=
+'<h2>Generated ideas</h2>'+
+data.map(x=>'<div class="result-item">'+escapeHtml(x)+'</div>').join('');
+}
+
+document.getElementById('generate').addEventListener('click',()=>{
+const x=document.getElementById('topic').value.trim();
+
+if(!x){
+document.getElementById('result').innerHTML='<p>Enter a topic first.</p>';
+return;
+}
+
+show(
+TEMPLATES.map(s=>
+s.replaceAll('{x}',x)
+.replaceAll('{base}',x.toLowerCase().replace(/[^a-z0-9]/g,''))
+)
+);
+});
+
+document.getElementById('topic').addEventListener('keydown',e=>{
+if(e.key==='Enter'){
+document.getElementById('generate').click();
+}
+});
+</script>
+
+</body>
+</html>
