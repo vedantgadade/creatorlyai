@@ -5,9 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Shorts Script Generator | CreatorlyAI</title>
-  <meta name="description" content="Create simple YouTube Shorts script ideas with CreatorlyAI's free Shorts Script Generator. Enter your topic and get a ready-to-edit short video script.">
+  <meta name="description" content="Create simple YouTube Shorts script ideas with CreatorlyAI's free Shorts Script Generator. Enter a topic and get a ready-to-edit hook, value and CTA.">
 
   <link rel="canonical" href="https://creatorlyai-search-console-ready.vercel.app/shorts-script-generator/">
+
+  <!-- Breadcrumb structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "CreatorlyAI",
+        "item": "https://creatorlyai-search-console-ready.vercel.app/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Shorts Script Generator",
+        "item": "https://creatorlyai-search-console-ready.vercel.app/shorts-script-generator/"
+      }
+    ]
+  }
+  </script>
 
   <style>
     body {
@@ -70,9 +92,9 @@
   <h1>Shorts Script Generator</h1>
 
   <p>
-    Create simple script ideas for YouTube Shorts and short-form videos.
-    Enter your topic and get a ready-to-edit script with a hook, useful
-    information and a call to action.
+    Create simple YouTube Shorts script ideas for your next video.
+    Enter a topic and get a ready-to-edit structure with a hook,
+    useful information and a call to action.
   </p>
 
   <div class="box">
@@ -92,31 +114,39 @@
   <h2>How to use the Shorts Script Generator</h2>
 
   <p>
-    Enter your video topic and click Generate Script. The tool creates a
-    simple short-form video structure that you can edit and adapt to your
-    own content.
+    Enter your video topic and click Generate Script. The tool creates
+    a simple Shorts structure that you can customize with your own
+    information, examples and speaking style.
   </p>
 
-  <h2>Tips for better Shorts scripts</h2>
+  <h2>Tips for better YouTube Shorts scripts</h2>
 
   <ul>
-    <li>Start with an interesting hook.</li>
-    <li>Keep each point short and clear.</li>
-    <li>Focus on one main idea per video.</li>
-    <li>Use examples when they help explain the topic.</li>
+    <li>Start with a clear hook.</li>
+    <li>Keep the main information focused on one topic.</li>
+    <li>Use short and easy-to-understand sentences.</li>
+    <li>Remove unnecessary information.</li>
     <li>Finish with a clear call to action.</li>
   </ul>
 
   <h2>Frequently Asked Questions</h2>
 
   <h3>Is this Shorts Script Generator free?</h3>
-  <p>Yes. CreatorlyAI provides this tool for free.</p>
+  <p>
+    Yes. The tool is available for free on CreatorlyAI.
+  </p>
 
   <h3>Can I use the scripts for YouTube Shorts?</h3>
-  <p>Yes. You can customize the generated script for your own Shorts videos.</p>
+  <p>
+    Yes. The generated structure is designed as a starting point
+    for YouTube Shorts and other short-form videos.
+  </p>
 
   <h3>Can I edit the generated script?</h3>
-  <p>Yes. The generated script is a starting point that you can change to fit your video.</p>
+  <p>
+    Yes. You should customize the script with your own facts,
+    examples and style before publishing.
+  </p>
 
   <script>
     function generateScript() {
@@ -130,9 +160,8 @@
 
       result.textContent =
         "HOOK (0–3s): Most people don't know this about " + topic + ".\n\n" +
-        "VALUE (3–35s): Here are 3 simple things you should know about " + topic + ". " +
-        "First, understand the basics. Second, focus on the most useful part. " +
-        "Third, practice and improve with real examples.\n\n" +
+        "VALUE (3–35s): Explain the main idea in 2–3 simple points. " +
+        "Show examples and keep each point short.\n\n" +
         "CTA (35–45s): Follow for more simple tips about " + topic + ".";
     }
   </script>
